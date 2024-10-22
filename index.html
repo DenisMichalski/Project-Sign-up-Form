@@ -2,62 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="#" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Sign Up Form</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="#" type="image/x-icon" />
+  <link rel="stylesheet" href="kistyle.css" />
+  <title>Sign Up Form</title>
 </head>
 
 <body>
-    <div class="leftside-container">
-        <img id="background-image" src="./images/drew-dizzy-graham-cTKGZJTMJQU-unsplash.jpg" alt="Background Image">
-        <div class="logo-container">
-            <img id="odin-logo" src="./images/odin-lined.png" alt="Odin Logo">
-            <span>ODIN</span>
-        </div>
-        <div class="credit">Photo by <a
-                href="https://unsplash.com/@dizzyd718?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Drew
-                Dizzy
-                Graham</a> on <a
-                href="https://unsplash.com/photos/woman-peeking-over-green-leaf-plant-taken-at-daytime-cTKGZJTMJQU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-        </div>
+  <div class="leftside-container">
+    <img id="background-image" src="./images/drew-dizzy-graham-cTKGZJTMJQU-unsplash.jpg" alt="Background Image" />
+    <div class="logo-container">
+      <img id="odin-logo" src="./images/odin-lined.png" alt="Odin Logo" />
+      <span>ODIN</span>
     </div>
-    <div class="rightside-container">
-        <div class="header">
-            <h2>This is not a real online service! You know you need something
-                like this in your life to help you realize your deepest dreams.
-                Sign up to get started. <br>
-                <h2>You <em>know</em> you want to.</h2>
-            </h2>
-        </div>
-        <div class="signin-container">
-            <h2>Let's do <em>this!</em></h2>
-            <form action="/." method="post">
-                
-                    <label for="firstname">FIRST NAME*</label>
-                    <input type="text" name="first-name" id="first-name" required>
-                    
-                    <label for="lastname">LAST NAME*</label>
-                    <input type="text" name="last-name" id="last-name" required>
-              
-                    <label for="email">EMAIL*</label>
-                    <input type="email" name="email" id="email" required>
-                  
-                    <label for="phonenumber">PHONE NUMBER*</label>
-                    <input type="tel" name="phonenumber" id="phonenumber" required>
-                
-               
-                    <label for="password">PASSWORD*</label>
-                    <input type="password" name="password" id="password" required>
-                    
-                    <label for="confirmpassword">CONFIRM PASSWORD*</label>
-                    <input type="password" name="confirmpassword" id="confirmpassword" required>
-                
-            </form>
-        </div>
+    <div class="credit">
+      Photo by
+      <a href="https://unsplash.com/@dizzyd718?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Drew
+        Dizzy Graham</a>
+      on
+      <a
+        href="https://unsplash.com/photos/woman-peeking-over-green-leaf-plant-taken-at-daytime-cTKGZJTMJQU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
     </div>
+  </div>
+  <div class="rightside-container">
+    <div class="header">
+      <h2>
+        This is not a real online service! You know you need something like
+        this in your life to help you realize your deepest dreams. Sign up to
+        get started. <br />
+        <h2>You <em>know</em> you want to.</h2>
+      </h2>
+    </div>
+    <div class="signin-container">
+      <h2>Let's do <em>this!</em></h2>
+      <form action="/." method="post">
+        <div>
+          <label for="firstname">FIRST NAME*</label>
+          <input type="text" name="first-name" id="first-name" required />
 
+          <label for="email">EMAIL*</label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="password">PASSWORD*</label>
+          <input type="password" name="password" id="password" required
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$"
+            title="The password must be at least 8 characters long and contain upper and lower case letters, a number and a special character.">
+
+        </div>
+        <div>
+          <label for="lastname">LAST NAME*</label>
+          <input type="text" name="last-name" id="last-name" required />
+
+          <label for="phonenumber">PHONE NUMBER*</label>
+          <input type="tel" name="phone-number" id="phone-number" required pattern="^\+?[\d\s\-]{10,15}$"
+            placeholder="+49 123 456 7890" title="Please enter a valid phone number.">
+
+
+          <label for="confirmPassword">CONFIRM PASSWORD*</label>
+          <input type="password" name="confirmpassword" id="confirmpassword" required />
+        </div>
+        <button type="submit" form="form">Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
+      </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

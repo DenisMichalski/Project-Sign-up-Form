@@ -9,12 +9,11 @@ span {
     font-size: 100px;
 }
 
-
 body {
     margin: 0;
     display: flex;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 #background-image {
@@ -35,8 +34,7 @@ body {
     gap: 5px;
     width: 70vh;
     position: absolute;
-    top: 58%;  
-    
+    top: 58%;
 }
 
 .credit {
@@ -54,22 +52,106 @@ body {
 
 a {
     color: white;
-    
 }
 
 .header {
-        flex: 1;
-        padding: 50px;
-        bottom: 50%;
-        display: flex;
-        flex-direction: column;
-        background-color: #f9f9f9;
+    flex: 1;
+    padding: 50px;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
 }
 
 h2 {
     font-size: 37px;
-    
 }
 
+.signin-container {
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 20px;
+    box-shadow: 5px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
 
+form {
+    display: flex;
+    gap: 50px;
+}
 
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+}
+
+input {
+    outline: none;
+    height: 1.6rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 100%;
+}
+
+label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #596d48;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    padding: 50px;
+    cursor: pointer;
+    margin-left: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+p {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+input:focus {
+    border-color: blue;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* @media (max-width: 760px) {
+    body {
+        flex-direction: column;
+    }
+
+    #background-image {
+        width: 100%;
+        height: auto;
+        /* Damit das Bild seine Proportionen behält */
