@@ -18,7 +18,7 @@ body {
 
 #background-image {
     width: 70vh;
-    height: 100vh;
+    height: 100%;
 }
 
 #odin-logo {
@@ -34,13 +34,13 @@ body {
     gap: 5px;
     width: 70vh;
     position: absolute;
-    top: 58%;
+    top: 67%;
 }
 
 .credit {
     color: white;
     position: absolute;
-    bottom: 1%;
+    bottom: -200px;
     font-size: 18px;
     font-style: italic;
     font-weight: 800;
@@ -52,6 +52,12 @@ body {
 
 a {
     color: white;
+}
+
+p, a {
+    color: #596D48;
+    gap: 10px;
+    font-size: 16px;
 }
 
 .header {
@@ -122,6 +128,12 @@ p {
     display: flex;
     align-items: center;
     margin-top: 100px;
+}
+
+.container-btn {
+    display: flex;
+    
+    
 }
 
 button:active {
