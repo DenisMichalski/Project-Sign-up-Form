@@ -55,7 +55,7 @@ a {
 }
 
 p, a {
-    color: #596D48;
+    color: white;
     gap: 10px;
     font-size: 16px;
 }
@@ -132,8 +132,12 @@ p {
 
 .container-btn {
     display: flex;
-    
-    
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.account {
+    color: #596D48;
 }
 
 button:active {
